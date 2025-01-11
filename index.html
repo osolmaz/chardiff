@@ -58,8 +58,11 @@
     }
 
     function loadFromLocalStorage() {
-        const input1 = localStorage.getItem('input1') || '';
-        const input2 = localStorage.getItem('input2') || '';
+        const defaultText1 = "This text is different than the other one";
+        const defaultText2 = "This text is not the same as the first one";
+
+        const input1 = localStorage.getItem('input1') || defaultText1;
+        const input2 = localStorage.getItem('input2') || defaultText2;
 
         document.getElementById('input1').value = input1;
         document.getElementById('input2').value = input2;
