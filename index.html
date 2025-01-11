@@ -40,10 +40,18 @@
       background-color: #59ff59;
       color: #000000;
     }
+    .github-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      margin: 0;
+      text-align: right;
+    }
   </style>
 </head>
 <body>
   <h1>chardiff</h1>
+  <p class="github-link"><small><a href="https://github.com/osolmaz/chardiff" style="color: #59ff59;">See the source on GitHub</a></small></p>
   <div class="container">
     <textarea id="input1" oninput="updateDiff(); saveToLocalStorage()" placeholder="Enter text #1"></textarea>
     <textarea id="input2" oninput="updateDiff(); saveToLocalStorage()" placeholder="Enter text #2"></textarea>
